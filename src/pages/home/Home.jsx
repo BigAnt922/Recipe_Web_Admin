@@ -1,7 +1,11 @@
 import { Typography } from "@mui/material";
-import React from "react";
-
+import { useEffect } from "react";
+import { updateTitle } from "../../utils/Common";
 const Home = () => {
+  useEffect(() => {
+    updateTitle();
+  }, []);
+
   return <Typography variant="h3">Home</Typography>;
 };
 

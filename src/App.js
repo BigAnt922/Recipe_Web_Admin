@@ -1,12 +1,12 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Login from "./pages/Login";
-import Home from "./pages/Home";
-import SignUp from "./pages/SignUp";
-import Users from "./pages/Users";
-import Recipes from "./pages/Recipes";
-import Ingredients from "./pages/Ingredients";
-import Error from "./pages/Error";
-import Catagories from "./pages/Catagories";
+import Login from "./pages/login/Login";
+import Error from "./pages/error/Error";
+import SignUp from "./pages/signup/SignUp";
+import Home from "./pages/home/Home";
+import Users from "./pages/users/Users";
+import Catagories from "./pages/catagories/Catagories";
+import Recipes from "./pages/recipes/Recipes";
+import Ingredients from "./pages/ingredients/Ingredients";
 
 const router = createBrowserRouter([
   {
