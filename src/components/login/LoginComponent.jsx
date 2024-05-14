@@ -1,17 +1,17 @@
-import { Card, Grid, Typography } from "@mui/material";
+import { Card, Typography } from "@mui/material";
 import React from "react";
 import styles from "../login/LoinComponent.module.css";
 
-const LoginComponent = () => {
+const LoginComponent = ({ heading, loginData }) => {
   return (
-    <Grid container>
-      <Grid item>
-        <Typography></Typography>
-      </Grid>
+    <>
+      <Typography variant="h2" className={styles.heading}>
+        {heading}
+      </Typography>
       <Card raised className={styles.loginContainer}>
         LoginComponent
       </Card>
-    </Grid>
+    </>
   );
 };
 
