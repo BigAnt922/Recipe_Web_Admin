@@ -1,6 +1,7 @@
 import React from "react";
 import "./LoinComponent.css";
 import { Card, Grid, TextField, Typography } from "@mui/material";
+import TextFieldCommon from "../common/textField/TextFieldCommon";
 
 const LoginComponent = ({ heading, loginData }) => {
   return (
@@ -27,9 +28,11 @@ const LoginComponent = ({ heading, loginData }) => {
             className="formContainer"
           >
             <Grid item>
-              <TextField label="username" variant="outlined" />
+              <TextFieldCommon type="text" label="username" />
             </Grid>
-            <Grid item>password</Grid>
+            <Grid item>
+              <TextFieldCommon type="password" label="password" />
+            </Grid>
             <Grid item>show password</Grid>
             <Grid item>login</Grid>
             <Grid item>sign up</Grid>
