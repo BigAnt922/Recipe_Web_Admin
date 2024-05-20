@@ -1,16 +1,18 @@
 import { useEffect } from "react";
-import styles from "../login/Login.module.css";
+import "./Login.css";
 import { updateTitle } from "../../utils/Common";
 import LoginComponent from "../../components/login/LoginComponent";
 import words from "../../utils/words.json";
+import { Box } from "@mui/material";
+
 const Login = () => {
   useEffect(() => {
     updateTitle();
   }, []);
   return (
-    <div className={styles.container}>
+    <Box className={"container"}>
       <LoginComponent heading={words.heading} loginData={words.login} />
-    </div>
+    </Box>
   );
 };
 

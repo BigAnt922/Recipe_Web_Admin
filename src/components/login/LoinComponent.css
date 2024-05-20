@@ -1,0 +1,19 @@
+.container,
+.formContainer {
+  height: 100%;
+}
+
+.heading {
+  text-transform: uppercase;
+  font-weight: 600 !important;
+}
+
+.loginContainer {
+  width: 40rem;
+  height: 25rem;
+  background-color: #111920 !important;
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border-color: "red";
+}
