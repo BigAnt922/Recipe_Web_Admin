@@ -3,6 +3,10 @@
   "login": {
     "title": "login",
     "username": "username",
-    "password": "password"
+    "password": "password",
+    "showPassword": "show password",
+    "loginButton": "login",
+    "signupButton": "sign up",
+    "signupLink": "/signup"
   }
 }

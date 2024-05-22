@@ -1,9 +1,14 @@
+:root {
+  --primaryColor: #f3ab4c;
+  --bgColor: #111920;
+}
+
 html,
 body {
   width: 98vw;
   height: 98vh;
-  background-color: #111920;
-  color: #f3ab4c;
+  background-color: var(--bgColor);
+  color: var(--primaryColor);
 }
 
 #root {

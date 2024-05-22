@@ -1,0 +1,11 @@
+.MuiGrid-item > .MuiButton-root {
+  background-color: var(--primaryColor) !important;
+  color: var(--bgColor) !important;
+  width: 13rem;
+  font-weight: 600 !important;
+}
+
+.MuiGrid-item > .MuiButton-root:disabled {
+  background-color: #dad1c5 !important;
+  color: red !important;
+}

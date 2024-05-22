@@ -11,13 +11,13 @@
 .loginContainer {
   width: 40rem;
   height: 25rem;
-  background-color: #111920 !important;
+  background-color: var(--bgColor) !important;
 }
 
 .MuiInputBase-input {
-  color: #f3ab4c !important;
+  color: var(--primaryColor) !important;
 }
 
 .MuiOutlinedInput-notchedOutline {
-  border: 1px solid #f3ab4c !important;
+  border: 1px solid var(--primaryColor) !important;
 }

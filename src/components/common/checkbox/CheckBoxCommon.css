@@ -1,0 +1,14 @@
+.MuiTypography-body1 {
+  color: var(--primaryColor);
+  text-transform: capitalize;
+}
+
+.MuiSvgIcon-root {
+  color: var(--primaryColor);
+}
+
+.check_box_login {
+  position: relative;
+  right: 2rem;
+  bottom: 1.5rem;
+}
