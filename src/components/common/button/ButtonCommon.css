@@ -1,11 +1,15 @@
-.MuiGrid-item > .MuiButton-root {
+.MuiButton-root {
   background-color: var(--primaryColor) !important;
   color: var(--bgColor) !important;
   width: 13rem;
   font-weight: 600 !important;
 }
 
-.MuiGrid-item > .MuiButton-root:disabled {
+.Mui-disabled {
   background-color: #dad1c5 !important;
   color: red !important;
+}
+
+div:has(> .Mui-disabled) {
+  cursor: not-allowed;
 }

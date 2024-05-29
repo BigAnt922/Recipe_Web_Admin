@@ -1,0 +1,19 @@
+.container {
+  height: 100%;
+}
+
+.heading {
+  text-transform: capitalize;
+  font-weight: 500 !important;
+  text-decoration: underline;
+}
+
+.signupContainer {
+  width: 40rem;
+  height: 20rem;
+  background-color: var(--bgColor) !important;
+}
+
+.insideContaner {
+  height: 100%;
+}

@@ -1,12 +1,19 @@
 {
   "heading": "recipe controller",
   "login": {
-    "title": "login",
     "username": "username",
     "password": "password",
     "showPassword": "show password",
     "loginButton": "login",
     "signupButton": "sign up",
     "signupLink": "/signup"
+  },
+  "signup": {
+    "title": "sign up",
+    "username": "username",
+    "password": "password",
+    "email": "email",
+    "sendRequest": "send request",
+    "showPassword": "show password"
   }
 }

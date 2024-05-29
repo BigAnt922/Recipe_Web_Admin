@@ -1,12 +1,19 @@
-import { Typography } from "@mui/material";
-import React, { useEffect } from "react";
+import { useEffect } from "react";
+import "./SignUp.css";
 import { updateTitle } from "../../utils/Common";
+import words from "../../utils/words.json";
+import { Box } from "@mui/material";
+import SignUpComponent from "../../components/signup/SignUpComponent";
 
 const SignUp = () => {
   useEffect(() => {
     updateTitle();
   }, []);
-  return <Typography variant="h3">SignUp</Typography>;
+  return (
+    <Box className={"container"}>
+      <SignUpComponent heading={words.heading} signupData={words.signup} />
+    </Box>
+  );
 };
 
 export default SignUp;
