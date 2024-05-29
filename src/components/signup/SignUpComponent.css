@@ -10,10 +10,24 @@
 
 .signupContainer {
   width: 40rem;
-  height: 20rem;
+  height: 30rem;
   background-color: var(--bgColor) !important;
 }
 
 .insideContaner {
   height: 100%;
+}
+
+.linkText,
+.arrow {
+  display: inline;
+  color: var(--primaryColor);
+  cursor: pointer;
+}
+
+.linkText {
+  position: relative;
+  bottom: 8px;
+  left: 8px;
+  text-decoration: underline;
 }

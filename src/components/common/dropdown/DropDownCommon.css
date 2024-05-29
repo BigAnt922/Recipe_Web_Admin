@@ -1,0 +1,22 @@
+.MuiFormControl-fullWidth {
+  width: 13rem !important;
+}
+
+.MuiFormLabel-root,
+.MuiSvgIcon-root {
+  color: var(--primaryColor) !important;
+  text-transform: capitalize;
+}
+
+.MuiMenuItem-root {
+  text-transform: uppercase;
+  color: var(--primaryColor) !important;
+}
+
+.MuiInputBase-input {
+  text-transform: uppercase;
+}
+
+.MuiMenu-paper {
+  background-color: var(--bgColor) !important;
+}

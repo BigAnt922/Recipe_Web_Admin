@@ -14,6 +14,19 @@
     "password": "password",
     "email": "email",
     "sendRequest": "send request",
-    "showPassword": "show password"
+    "showPassword": "show password",
+    "dropdownLabel": "roles",
+    "dropdownObject": [
+      {
+        "id": 0,
+        "value": "ROLE_ADMIN",
+        "label": "admin"
+      },
+      {
+        "id": 1,
+        "value": "ROLE_USER",
+        "label": "user"
+      }
+    ]
   }
 }
