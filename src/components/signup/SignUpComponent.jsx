@@ -92,7 +92,7 @@ const SignUpComponent = ({ heading, signupData }) => {
                 onClick={() => console.log("BUTTON CLICKED")}
               />
             </Grid>
-            <Grid item>
+            <Grid item className="goBack">
               <ArrowBackIcon className="arrow" onClick={navigateBackToLogin} />
               <Typography
                 variant="body2"

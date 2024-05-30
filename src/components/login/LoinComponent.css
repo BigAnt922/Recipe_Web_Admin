@@ -12,6 +12,8 @@
   width: 40rem;
   height: 25rem;
   background-color: var(--bgColor) !important;
+  box-shadow: 0px 5px 5px -3px #91662d, 0px 0px 10px 1px #91662d,
+    0px 3px 14px 2px #91662d !important;
 }
 
 .MuiInputBase-input {
