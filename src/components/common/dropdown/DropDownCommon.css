@@ -13,7 +13,7 @@
   color: var(--primaryColor) !important;
 }
 
-.MuiInputBase-input {
+.MuiSelect-select {
   text-transform: uppercase;
 }
 
