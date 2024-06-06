@@ -16,7 +16,10 @@ export const signUpApi = (email, password, roles) => {
     redirect: "follow",
   };
 
-  fetch("http://localhost:8080/user/", requestOptions)
+  fetch(
+    process.env.REACT_APP_ENDPOINT + process.env.REACT_APP_SIGN_UP,
+    requestOptions
+  )
     .then((response) => response.text())
     .then((result) => console.log(result))
     .catch((error) => console.error(error));
