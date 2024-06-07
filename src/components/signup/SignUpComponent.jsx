@@ -9,6 +9,7 @@ import DropDownCommon from "../common/dropdown/DropDownCommon";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import { useNavigate } from "react-router-dom";
 import { signUpApi } from "../../api/signUpApi";
+import DialogCommon from "../common/dialog/DialogCommon";
 
 const SignUpComponent = ({ heading, signupData }) => {
   const [email, setEmail] = useState("");
@@ -17,6 +18,13 @@ const SignUpComponent = ({ heading, signupData }) => {
     show: false,
   });
   const [dropdown, setDropdown] = useState([]);
+
+  const [dialogOpen, setDialogOpen] = useState(false);
+
+  const [apiStatus, setApiStatus] = useState({
+    status: "",
+    message: "",
+  });
 
   const navigate = useNavigate();
 
@@ -30,8 +38,15 @@ const SignUpComponent = ({ heading, signupData }) => {
     setDropdown(arr);
   };
 
-  const signUp = () => {
-    signUpApi(email, password.data, dropdown);
+  const signUp = async () => {
+    const response = await signUpApi(email, password.data, dropdown);
+    const status = JSON.parse(response)?.status ?? 201;
+    const message = JSON.parse(response).message ?? "User Created";
+    setApiStatus({
+      status,
+      message,
+    });
+    setDialogOpen(true);
   };
 
   return (
@@ -49,6 +64,21 @@ const SignUpComponent = ({ heading, signupData }) => {
       </Grid>
 
       <Grid item container justifyContent="center" alignItems="center">
+        {dialogOpen && (
+          <DialogCommon
+            open={dialogOpen}
+            onClose={() => setDialogOpen(false)}
+            onAccept={() => setDialogOpen(false)}
+            heading={apiStatus.message}
+            mainText={
+              apiStatus.status === 201
+                ? process.env.REACT_APP_SIGN_UP_SUCCESS
+                : process.env.REACT_APP_SIGN_UP_FAIL
+            }
+            agreeText="ok"
+            disagreeText="close"
+          />
+        )}
         <Card raised className="signupContainer">
           <Grid
             container

@@ -1,4 +1,4 @@
-export const signUpApi = (email, password, roles) => {
+export const signUpApi = async (email, password, roles) => {
   const myHeaders = new Headers();
   myHeaders.append("Content-Type", "application/json");
 
@@ -16,11 +16,11 @@ export const signUpApi = (email, password, roles) => {
     redirect: "follow",
   };
 
-  fetch(
+  return await fetch(
     process.env.REACT_APP_ENDPOINT + process.env.REACT_APP_SIGN_UP,
     requestOptions
   )
     .then((response) => response.text())
-    .then((result) => console.log(result))
+    .then((result) => result)
     .catch((error) => console.error(error));
 };
