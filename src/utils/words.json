@@ -28,5 +28,11 @@
         "label": "user"
       }
     ]
+  },
+  "error": {
+    "title": "oh ho...",
+    "message": "Page Not Found",
+    "btnText": "Back To Home Page",
+    "homePageLink": "/home"
   }
 }
