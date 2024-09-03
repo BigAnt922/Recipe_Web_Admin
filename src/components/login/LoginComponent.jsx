@@ -24,7 +24,7 @@ const LoginComponent = ({ heading, loginData }) => {
       className="container"
     >
       <Grid item>
-        <Typography variant="h2" className="heading">
+        <Typography variant="h2" className="login-heading">
           {heading}
         </Typography>
       </Grid>

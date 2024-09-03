@@ -17,7 +17,7 @@ const ErrorComponent = ({ errorData }) => {
       className="container"
     >
       <Grid item>
-        <Typography variant="h2" className="heading">
+        <Typography variant="h2" className="error-heading">
           {errorData.title}
         </Typography>
       </Grid>
@@ -27,7 +27,7 @@ const ErrorComponent = ({ errorData }) => {
       </Grid>
 
       <Grid item>
-        <Typography variant="h4" className="heading">
+        <Typography variant="h4" className="error-heading">
           {errorData.message}
         </Typography>
       </Grid>

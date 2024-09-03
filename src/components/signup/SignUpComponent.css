@@ -2,7 +2,7 @@
   height: 100%;
 }
 
-.heading {
+.signUpHeading {
   text-transform: capitalize;
   font-weight: 500 !important;
   text-decoration: underline;

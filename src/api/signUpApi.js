@@ -1,12 +1,11 @@
-export const signUpApi = async (email, password, roles) => {
+export const signUpApi = async (email, password, role) => {
   const myHeaders = new Headers();
   myHeaders.append("Content-Type", "application/json");
 
   const raw = JSON.stringify({
     username: email,
-    email,
     password,
-    roles,
+    role,
   });
 
   const requestOptions = {

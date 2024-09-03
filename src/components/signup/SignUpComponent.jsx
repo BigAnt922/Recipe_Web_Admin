@@ -58,7 +58,7 @@ const SignUpComponent = ({ heading, signupData }) => {
       className="container"
     >
       <Grid item>
-        <Typography variant="h3" className="heading">
+        <Typography variant="h3" className="signUpHeading">
           {signupData.title}
         </Typography>
       </Grid>
