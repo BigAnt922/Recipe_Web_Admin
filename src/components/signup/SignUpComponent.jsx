@@ -17,7 +17,7 @@ const SignUpComponent = ({ heading, signupData }) => {
     data: "",
     show: false,
   });
-  const [dropdown, setDropdown] = useState([]);
+  const [dropdown, setDropdown] = useState();
 
   const [dialogOpen, setDialogOpen] = useState(false);
 
@@ -33,9 +33,7 @@ const SignUpComponent = ({ heading, signupData }) => {
   };
 
   const dropDownValue = (e) => {
-    const arr = [];
-    arr.push(e);
-    setDropdown(arr);
+    setDropdown(e);
   };
 
   const signUp = async () => {
@@ -126,7 +124,7 @@ const SignUpComponent = ({ heading, signupData }) => {
             <Grid item>
               <ButtonCommon
                 text={signupData.sendRequest}
-                disabled={!(email && password.data && dropdown.length > 0)}
+                disabled={!(email && password.data && dropdown)}
                 onClick={signUp}
               />
             </Grid>

@@ -24,8 +24,8 @@
       },
       {
         "id": 1,
-        "value": "ROLE_USER",
-        "label": "user"
+        "value": "ROLE_MANAGER",
+        "label": "manager"
       }
     ]
   },
