@@ -15,6 +15,8 @@ const LoginComponent = ({ heading, loginData }) => {
     show: false,
   });
 
+  const handleLoginClick = () => {};
+
   return (
     <Grid
       container
@@ -70,7 +72,7 @@ const LoginComponent = ({ heading, loginData }) => {
               <ButtonCommon
                 text={loginData.loginButton}
                 disabled={!(username && password.data)}
-                onClick={() => console.log(username, password)}
+                onClick={handleLoginClick}
               />
             </Grid>
             <Grid item>
